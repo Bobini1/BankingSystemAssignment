@@ -5,7 +5,7 @@ headers =
 sources = testlib.c
 
 program: $(headers) $(sources)
-	gcc -fsanitize=undefined -g -Wall -pedantic $(sources) -o program -lm
+	gcc -fsanitize=undefined -g -Wall -Wextra -pedantic $(sources) -o program -lm
 
 .PHONY: clean check debug
 
